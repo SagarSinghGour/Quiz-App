@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="quiz">
+        <div class="html" id="html">
+            <h1> html</h1>
+            <button onclick="openquiz('html')"> click to open</button>
+        </div>
+        <div class="css" id="css">
+            <h1> css</h1>
+            <button onclick="openquiz('css')"> click to open</button>
+        </div>
+        <div class="js" id="js">
+            <h1> js</h1>
+            <button onclick="openquiz('js')"> click to open</button>
+        </div>
+    </div>
+
+    <h1 id="quiz-title"></h1>
+    <div class="quiz-section">
+        <i class="index"></i>
+        <div class="ques">
+            <h1 class="heading">Quiz</h1>
+            <h1 id="question"></h1> <br>
+            <div class="options"></div>
+
+            <button id="next-btn" onclick="nextQuestion()" class="next">Next Question</button>
+            <button id="previous" onclick="previousQuestion()" class="previous">Previous Question</button>
+        </div>
+
+        <button class="back" onclick="back()">back</button>
+    </div>
+    
+    <div class="score-section">
+        
+        <h1> your score is <span id="score"></span></h1>
+        <button class="back" onclick="home()">Go to home</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>

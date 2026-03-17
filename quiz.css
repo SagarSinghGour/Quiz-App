@@ -1,0 +1,124 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HOME PAGE */
+.quiz {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.quiz > div {
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* COLORS */
+.html { background-color: rgb(131, 220, 245); }
+.css { background-color: rgb(134, 243, 207); }
+.js { background-color: rgb(250, 230, 204); }
+
+/* QUIZ SECTION */
+.quiz-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN QUIZ BOX (FIXED) */
+.quiz-section .ques {
+    width: 500px;
+    max-width: 90%;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+/* QUESTION TEXT */
+#question {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+/* OPTIONS */
+.options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* OPTION BUTTON */
+.option {
+    padding: 12px;
+    border: 2px solid #333;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.option:hover {
+    background-color: #ddd;
+}
+
+/* BUTTONS */
+.next, .previous {
+    padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -50px;
+}
+.back{
+     padding: 10px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.next { right: 0; }
+.previous { left: 0; }
+
+/* SCORE */
+.score-section {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    flex-direction: column;
+    text-align: center;       
+}
+
+/* BACK BUTTON */
+button {
+    cursor: pointer;
+}
